@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/calculator.jar"/>
+	<classpathentry kind="lib" path="D:/jars/newjars/selenium-2.53.1/selenium-java-2.53.1.jar"/>
+	<classpathentry kind="lib" path="D:/jars/newjars/selenium-2.53.1/selenium-java-2.53.1-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/jars/newjars/selenium-2.53.1/selenium-server-2.53.1.jar"/>
+	<classpathentry kind="lib" path="D:/jars/newjars/selenium-2.53.1/selenium-server-2.53.1-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/jars/newjars/selenium-2.53.1/selenium-server-standalone-2.53.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
