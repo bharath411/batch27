@@ -18,6 +18,10 @@ public class PayTM {
 		
 	}
 	
+	public void test2(){
+		System.out.println("I am test");
+	}
+	
 	public static void main(String[] args) {
 		PayTM pay =new PayTM();
 		pay.verifyMovieList();
