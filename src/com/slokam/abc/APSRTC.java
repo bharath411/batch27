@@ -1,5 +1,7 @@
 package com.slokam.abc;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,10 +12,10 @@ public class APSRTC {
 	
 	public void testDriverInfo(){
 		
-		FirefoxDriver driver = new FirefoxDriver();
+		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.apsrtconline.in/oprs-web/");
 		
-		WebElement driverInfo = driver.findElementByLinkText("Driver Info");
+		WebElement driverInfo = driver.findElement(By.linkText("Driver Info"));
 		driverInfo.click();
 		try {
 			Thread.sleep(5000);
@@ -22,12 +24,13 @@ public class APSRTC {
 			e.printStackTrace();
 		}
 		
-		driver.findElementByXPath("//input[@value='Go']");
-		WebElement serviceCodeID =  driver.findElementById("serviceCode");
+		driver.findElement(By.xpath("//input[@value='Go']"));
+		WebElement serviceCodeID =  driver.findElement(By.id("serviceCode"));
 		serviceCodeID.sendKeys("6666");
 		
-		WebElement searchBtnID = driver.findElementById("searchBtn");
+		WebElement searchBtnID = driver.findElement(By.id("searchBtn"));
 		searchBtnID.click();
+		
 	}
 	
 	public void verifyNameOfService(){
@@ -73,6 +76,8 @@ public class APSRTC {
 		String price= priceEle.getText();
 		System.out.println(price);
 		
+		driver.findElement(By.xpath("//span[@class='TickRate rupeeIco']")).click();
+		driver.findElement(By.xpath("//span[@class='TickRate rupeeIco']")).sendKeys("");
 	}
 	
 	
@@ -96,11 +101,15 @@ public class APSRTC {
 		System.setProperty("webdriver.chrome.driver","E:\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("http://www.apsrtconline.in/");
+		
+		
 	}
 	
 	public void test2(){
 		System.setProperty("webdriver.ie.driver","E:\\IEDriverServer.exe");
 		InternetExplorerDriver driver = new InternetExplorerDriver();
 		driver.get("http://www.apsrtconline.in/");
+		
+		driver.quit();
 	}
 }
