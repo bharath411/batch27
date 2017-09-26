@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Naukari2 {
 
@@ -46,11 +47,9 @@ public class Naukari2 {
 		
 	}
 	
+	@Test
 	public void test1(){
 		launchBrowser();
 	}
-	public static void main(String[] args) {
-		Naukari2 n = new Naukari2();
-		n.test1();
-	}
+	
 }
