@@ -11,6 +11,6 @@ public class A implements X{
 	}
 	
 	public void run(){
-		System.out.println("I am running in A sdfdsf jkdfkjsdnjkskjdfnk ");
+		System.out.println("I am running in A asdasda ");
 	}
 }
